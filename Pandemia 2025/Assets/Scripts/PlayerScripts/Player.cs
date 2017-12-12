@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
 
     }
 
@@ -27,10 +28,17 @@ public class Player : MonoBehaviour
     void movePlayer()
     {
         if (Input.GetKey(KeyCode.W))
+        {
             transform.Translate(Vector3.forward * playerSpeed * Time.deltaTime);
-
-        if(Input.GetKey(KeyCode.S))
+            gameObject.GetComponent<Animation>().Play("run");
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
             transform.Translate(Vector3.back * playerSpeed * Time.deltaTime);
+            gameObject.GetComponent<Animation>().Play("run");
+        }
+        else if(Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+            gameObject.GetComponent<Animation>().Play("idle");
 
         if (Input.GetKey(KeyCode.D))
         {
