@@ -7,12 +7,27 @@ public class Player : MonoBehaviour
 
     public float playerSpeed;
     public float playerRotation;
-    
+
+    //puertas
+    private GameObject Ph7;
+    private GameObject Ph6;
+    private GameObject Ph5;
+    private GameObject Ph4;
+    private GameObject Ph3;
+    private GameObject Ph2;
+    private GameObject Ph1;
+
 
     // Use this for initialization
     void Start()
     {
-        
+        Ph7 = (GameObject)GameObject.FindGameObjectWithTag("Ph7");
+        Ph6 = (GameObject)GameObject.FindGameObjectWithTag("Ph6");
+        Ph5 = (GameObject)GameObject.FindGameObjectWithTag("Ph5");
+        Ph4 = (GameObject)GameObject.FindGameObjectWithTag("Ph4");
+        Ph3 = (GameObject)GameObject.FindGameObjectWithTag("Ph3");
+        Ph2 = (GameObject)GameObject.FindGameObjectWithTag("Ph2");
+        Ph1 = (GameObject)GameObject.FindGameObjectWithTag("Ph1");
 
     }
 
@@ -50,5 +65,31 @@ public class Player : MonoBehaviour
             transform.Rotate(new Vector3(0, - playerRotation * Time.deltaTime, 0));
 
         }
+    }
+
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ph7")
+            //Ph6.GetComponent<Animation>().Play();
+            Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x,-90.0f , transform.position.y));
+
+        if (collision.gameObject.tag == "Ph6")
+            Ph6.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+
+        if (collision.gameObject.tag == "Ph5")
+            Ph5.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+
+        if (collision.gameObject.tag == "Ph4")
+            Ph4.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+
+        if (collision.gameObject.tag == "Ph3")
+            Ph3.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+
+        if (collision.gameObject.tag == "Ph2")
+            Ph2.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+
+        if (collision.gameObject.tag == "Ph1")
+            Ph1.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
     }
 }
