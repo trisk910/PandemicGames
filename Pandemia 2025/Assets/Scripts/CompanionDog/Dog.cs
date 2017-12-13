@@ -19,7 +19,7 @@ public class Dog : MonoBehaviour {
     private bool follow;
     public static bool search;
 
-    public static bool isRoom3 = false;
+    public static bool isRoom5 = false;
     private float searchTimer;
 
     private void Awake()
@@ -48,7 +48,8 @@ public class Dog : MonoBehaviour {
         if(!stopFollow)
             target = Player.transform;
 
-        Debug.Log(searchTimer + " Time");
+        //Debug.Log(searchTimer + " Time");
+
         if (follow == true)
         {
             dPos.rotation = Quaternion.Slerp(dPos.rotation, Quaternion.LookRotation(target.position - dPos.position), rotSpeed * Time.deltaTime);
@@ -70,8 +71,8 @@ public class Dog : MonoBehaviour {
             follow = false;
         }
 
-        if (other.gameObject.tag == "TriggerH2")
-            isRoom3 = true;
+        if (other.gameObject.tag == "TriggerH5")
+            isRoom5 = true;
 
             
     }
@@ -83,8 +84,8 @@ public class Dog : MonoBehaviour {
                 follow = true;
         }
 
-        if (other.gameObject.tag == "TriggerH2")
-            isRoom3 = false;
+        if (other.gameObject.tag == "TriggerH5")
+            isRoom5 = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -94,11 +95,14 @@ public class Dog : MonoBehaviour {
 
     public void SearchForItems()
     {
-        if(search)
+        if (search)
         {
-           stopFollow = true;
-            
+            stopFollow = true;
+
             searchTimer += Time.fixedDeltaTime;
+
+            if (isRoom5)
+            { 
 
             if (searchTimer >= 0.0f)
                 target = mueble1.transform;
@@ -111,10 +115,10 @@ public class Dog : MonoBehaviour {
 
             if (searchTimer >= 16.0f)
             {
-                GameManager.Instance.haveKeyFromRoom3 = true;
+                GameManager.Instance.haveKeyFromRoom5 = true;
                 Start();
             }
-                            
+         }    
         }
 
     }

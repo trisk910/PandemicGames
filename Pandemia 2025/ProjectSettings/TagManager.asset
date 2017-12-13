@@ -14,7 +14,13 @@ TagManager:
   - MuebleConLlave
   - Mueble1
   - Mueble2
-  - TriggerH2
+  - TriggerH5
+  - BatteriaH1
+  - BatteriaH5
+  - putBatteria
+  - TriggerH4Code
+  - IntroducePass
+  - ElevatorDoors
   layers:
   - Default
   - TransparentFX

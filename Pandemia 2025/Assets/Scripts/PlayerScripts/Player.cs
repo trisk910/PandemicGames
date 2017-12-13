@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private GameObject Ph2;
     private GameObject Ph1;
 
+    public GameObject textCode;
     //Bolean Puertas
     private bool OpenPh2 = false;
 
@@ -76,7 +77,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(Dog.isRoom3==true)
+            if(Dog.isRoom5==true)
             {
                 Dog.search = true;
                
@@ -90,8 +91,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Ph7")
         {
             //Ph6.GetComponent<Animation>().Play();
-            if(GameManager.Instance.haveKeyFromRoom3)
+            if (GameManager.Instance.haveKeyFromRoom5)
+            {
                 Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+                GameManager.Instance.canOpenDoorH1 = true;
+            }
         }
         if (collision.gameObject.tag == "Ph6")
             Ph6.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
@@ -106,10 +110,52 @@ public class Player : MonoBehaviour
             Ph3.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
 
         if (collision.gameObject.tag == "Ph2")
-            if(OpenPh2)
+            if (OpenPh2)
                 Ph2.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
 
         if (collision.gameObject.tag == "Ph1")
-            Ph1.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+        {
+            if (GameManager.Instance.canOpenDoorH1)
+                Ph1.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+        }
+
+        if (collision.gameObject.tag == "BatteriaH1")
+        {
+            GameManager.Instance.haveTheBaterieFromRoom1 = true;
+            Destroy(collision.gameObject);
+
+        }
+
+        if (collision.gameObject.tag == "putBatteria")
+        {
+            if (GameManager.Instance.haveTheBaterieFromRoom1)
+            { 
+                GameManager.Instance.showBatteriaInRoom5 = true;
+                
+            }
+            
+        }
+        if(collision.gameObject.tag == "ElevatorDoors")
+        {
+            GameManager.Instance.LoadLevels();
+        }
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "TriggerH4Code")
+        {
+            GameManager.Instance.havePassword = true;
+            
+            Destroy(textCode.gameObject);
+        }
+
+        if(other.gameObject.tag == "IntroducePass")
+        {
+            GameManager.Instance.showHavePass = true;
+        }
+
     }
 }
