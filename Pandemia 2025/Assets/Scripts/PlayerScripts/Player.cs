@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     public float playerSpeed;
     public float playerRotation;
+    private Dog DogFunctions;
 
     //puertas
     private GameObject Ph7;
@@ -16,6 +17,9 @@ public class Player : MonoBehaviour
     private GameObject Ph3;
     private GameObject Ph2;
     private GameObject Ph1;
+
+    //Bolean Puertas
+    private bool OpenPh2 = false;
 
 
     // Use this for initialization
@@ -29,18 +33,19 @@ public class Player : MonoBehaviour
         Ph2 = (GameObject)GameObject.FindGameObjectWithTag("Ph2");
         Ph1 = (GameObject)GameObject.FindGameObjectWithTag("Ph1");
 
+        DogFunctions = FindObjectOfType<Dog>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        movePlayer();
-
-       
+        MovePlayer();
+        CallDogToSearch();      
 
     }
 
-    void movePlayer()
+    void MovePlayer()
     {
         if (Input.GetKey(KeyCode.W))
         {
@@ -67,13 +72,27 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+    void CallDogToSearch()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if(Dog.isRoom3==true)
+            {
+                Dog.search = true;
+               
+            }
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ph7")
-            //Ph6.GetComponent<Animation>().Play();
-            Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x,-90.0f , transform.position.y));
 
+        //OpeningDoors
+        if (collision.gameObject.tag == "Ph7")
+        {
+            //Ph6.GetComponent<Animation>().Play();
+            if(GameManager.Instance.haveKeyFromRoom3)
+                Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+        }
         if (collision.gameObject.tag == "Ph6")
             Ph6.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
 
@@ -87,7 +106,8 @@ public class Player : MonoBehaviour
             Ph3.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
 
         if (collision.gameObject.tag == "Ph2")
-            Ph2.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+            if(OpenPh2)
+                Ph2.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
 
         if (collision.gameObject.tag == "Ph1")
             Ph1.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));

@@ -11,6 +11,10 @@ TagManager:
   - Ph3
   - Ph2
   - Ph1
+  - MuebleConLlave
+  - Mueble1
+  - Mueble2
+  - TriggerH2
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
 
+    public bool haveKeyFromRoom3 = false;
+
     void Awake()
     {
         if (Instance == null)
