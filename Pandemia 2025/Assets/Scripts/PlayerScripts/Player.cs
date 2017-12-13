@@ -18,6 +18,16 @@ public class Player : MonoBehaviour
     private GameObject Ph2;
     private GameObject Ph1;
 
+    private GameObject th7;
+    private GameObject th6;
+    private GameObject th5;
+    private GameObject th4;
+    private GameObject th3;
+    private GameObject th1;
+
+    public GameObject Key;
+    private GameObject cKey;
+
     public GameObject textCode;
     //Bolean Puertas
     private bool OpenPh2 = false;
@@ -33,6 +43,13 @@ public class Player : MonoBehaviour
         Ph3 = (GameObject)GameObject.FindGameObjectWithTag("Ph3");
         Ph2 = (GameObject)GameObject.FindGameObjectWithTag("Ph2");
         Ph1 = (GameObject)GameObject.FindGameObjectWithTag("Ph1");
+
+        th7 = (GameObject)GameObject.FindGameObjectWithTag("Th7");
+        th6 = (GameObject)GameObject.FindGameObjectWithTag("Th6");
+        th5 = (GameObject)GameObject.FindGameObjectWithTag("Th5");
+        th4 = (GameObject)GameObject.FindGameObjectWithTag("Th4");
+        th3 = (GameObject)GameObject.FindGameObjectWithTag("Th3");
+        th1 = (GameObject)GameObject.FindGameObjectWithTag("Th1");
 
         DogFunctions = FindObjectOfType<Dog>();
 
@@ -95,19 +112,32 @@ public class Player : MonoBehaviour
             {
                 Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
                 GameManager.Instance.canOpenDoorH1 = true;
+                Destroy(th7.gameObject);
             }
         }
         if (collision.gameObject.tag == "Ph6")
+        {
             Ph6.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+            Destroy(th6.gameObject);
+        }
 
         if (collision.gameObject.tag == "Ph5")
-            Ph5.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+        {
+            Ph5.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.rotation.y));
+            Destroy(th5.gameObject);
+        }
 
         if (collision.gameObject.tag == "Ph4")
+        {
             Ph4.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+            Destroy(th4);
+        }
 
         if (collision.gameObject.tag == "Ph3")
+        {
             Ph3.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+            Destroy(th3.gameObject);
+        }
 
         if (collision.gameObject.tag == "Ph2")
             if (OpenPh2)
@@ -116,7 +146,10 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Ph1")
         {
             if (GameManager.Instance.canOpenDoorH1)
+            { 
                 Ph1.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.0f, transform.position.y));
+                Destroy(th1.gameObject);
+            }
         }
 
         if (collision.gameObject.tag == "BatteriaH1")

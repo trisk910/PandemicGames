@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43669567, g: 0.4842937, b: 0.5645435, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -935,10 +935,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 177980097}
-  - component: {fileID: 177980100}
   - component: {fileID: 177980099}
-  - component: {fileID: 177980098}
   - component: {fileID: 177980101}
+  - component: {fileID: 177980098}
   m_Layer: 0
   m_Name: Suelo (36)
   m_TagString: Untagged
@@ -960,24 +959,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &177980098
-Animator:
-  serializedVersion: 3
+--- !u!33 &177980098
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95464001074908086, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 177980096}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &177980099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1013,14 +1001,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &177980100
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33742279974593024, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 177980096}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &177980101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1042,10 +1022,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 187196617}
-  - component: {fileID: 187196620}
   - component: {fileID: 187196619}
-  - component: {fileID: 187196618}
   - component: {fileID: 187196621}
+  - component: {fileID: 187196618}
   m_Layer: 0
   m_Name: Suelo (28)
   m_TagString: Untagged
@@ -1067,24 +1046,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &187196618
-Animator:
-  serializedVersion: 3
+--- !u!33 &187196618
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95760894130291448, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 187196616}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &187196619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1120,14 +1088,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &187196620
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33919793099518888, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 187196616}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &187196621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1238,10 +1198,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 241933999}
-  - component: {fileID: 241934002}
   - component: {fileID: 241934001}
-  - component: {fileID: 241934000}
   - component: {fileID: 241934003}
+  - component: {fileID: 241934000}
   m_Layer: 0
   m_Name: Suelo (38)
   m_TagString: Untagged
@@ -1263,24 +1222,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &241934000
-Animator:
-  serializedVersion: 3
+--- !u!33 &241934000
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95841801302827066, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241933998}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &241934001
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1316,14 +1264,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &241934002
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33654242085274906, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 241933998}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &241934003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1671,6 +1611,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6a60659abb4d9d4b934feebd3dcc952, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &347337565
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -23.203
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.17343463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.6855074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.17343463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.6855074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808712707053946, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751641976376956, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &367480691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,10 +1666,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 367480692}
-  - component: {fileID: 367480695}
   - component: {fileID: 367480694}
-  - component: {fileID: 367480693}
   - component: {fileID: 367480696}
+  - component: {fileID: 367480693}
   m_Layer: 0
   m_Name: Suelo (30)
   m_TagString: Untagged
@@ -1705,24 +1690,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &367480693
-Animator:
-  serializedVersion: 3
+--- !u!33 &367480693
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95225511325568378, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367480691}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &367480694
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1758,14 +1732,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &367480695
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33366223646627728, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367480691}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &367480696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1845,10 +1811,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 389342221}
-  - component: {fileID: 389342224}
   - component: {fileID: 389342223}
-  - component: {fileID: 389342222}
   - component: {fileID: 389342225}
+  - component: {fileID: 389342222}
   m_Layer: 0
   m_Name: Suelo (41)
   m_TagString: Untagged
@@ -1870,24 +1835,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &389342222
-Animator:
-  serializedVersion: 3
+--- !u!33 &389342222
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95041087282642986, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389342220}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &389342223
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1923,14 +1877,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &389342224
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33606740817375190, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 389342220}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &389342225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2355,6 +2301,7 @@ MonoBehaviour:
   askPass: {fileID: 1931002420}
   showPassF: {fileID: 1269530182}
   IntroducePassT: {fileID: 950726300}
+  light: {fileID: 2052817582}
 --- !u!114 &436193136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2779,10 +2726,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 506770646}
-  - component: {fileID: 506770649}
   - component: {fileID: 506770648}
-  - component: {fileID: 506770647}
   - component: {fileID: 506770650}
+  - component: {fileID: 506770647}
   m_Layer: 0
   m_Name: Suelo
   m_TagString: Untagged
@@ -2804,24 +2750,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &506770647
-Animator:
-  serializedVersion: 3
+--- !u!33 &506770647
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95207088761029324, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506770645}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &506770648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2837,7 +2772,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 98ae0ad1798913d4fad6468e75253a5f, type: 2}
+  - {fileID: 2100000, guid: e30c676552b0d0748a52318998fb5bcd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2857,14 +2792,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &506770649
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33513999611960846, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506770645}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &506770650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3299,10 +3226,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 598932041}
-  - component: {fileID: 598932044}
   - component: {fileID: 598932043}
-  - component: {fileID: 598932042}
   - component: {fileID: 598932045}
+  - component: {fileID: 598932042}
   m_Layer: 0
   m_Name: Suelo (40)
   m_TagString: Untagged
@@ -3324,24 +3250,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &598932042
-Animator:
-  serializedVersion: 3
+--- !u!33 &598932042
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95299608582675620, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 598932040}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &598932043
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3377,14 +3292,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &598932044
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33931949487725822, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 598932040}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &598932045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3495,10 +3402,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 620532379}
-  - component: {fileID: 620532382}
   - component: {fileID: 620532381}
-  - component: {fileID: 620532380}
   - component: {fileID: 620532383}
+  - component: {fileID: 620532380}
   m_Layer: 0
   m_Name: Suelo (32)
   m_TagString: Untagged
@@ -3520,24 +3426,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &620532380
-Animator:
-  serializedVersion: 3
+--- !u!33 &620532380
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95152047454453222, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620532378}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &620532381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3573,14 +3468,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &620532382
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33887784154220300, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620532378}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &620532383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3738,6 +3625,92 @@ Transform:
   m_Father: {fileID: 419713830}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &685892515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 685892516}
+  - component: {fileID: 685892519}
+  - component: {fileID: 685892518}
+  - component: {fileID: 685892517}
+  m_Layer: 0
+  m_Name: TechoH7
+  m_TagString: Th7
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685892516
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685892515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.6, y: 2.372, z: -24.55}
+  m_LocalScale: {x: 0.652061, y: 0.51136726, z: 0.73499715}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &685892517
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685892515}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &685892518
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685892515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &685892519
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685892515}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &690352753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,10 +3893,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 723206388}
-  - component: {fileID: 723206391}
   - component: {fileID: 723206390}
-  - component: {fileID: 723206389}
   - component: {fileID: 723206392}
+  - component: {fileID: 723206389}
   m_Layer: 0
   m_Name: Suelo (18)
   m_TagString: Untagged
@@ -3945,24 +3917,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &723206389
-Animator:
-  serializedVersion: 3
+--- !u!33 &723206389
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95713845588691834, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723206387}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &723206390
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3998,14 +3959,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &723206391
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33569877062331230, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723206387}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &723206392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4078,6 +4031,92 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &743715245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 743715246}
+  - component: {fileID: 743715249}
+  - component: {fileID: 743715248}
+  - component: {fileID: 743715247}
+  m_Layer: 0
+  m_Name: TechoH6
+  m_TagString: Th6
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &743715246
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743715245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.21, y: 2.372, z: -24.025}
+  m_LocalScale: {x: 0.86207885, y: 0.51137, z: 0.8775909}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &743715247
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743715245}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &743715248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743715245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &743715249
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743715245}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &744842915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,10 +4304,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 758591451}
-  - component: {fileID: 758591454}
   - component: {fileID: 758591453}
-  - component: {fileID: 758591452}
   - component: {fileID: 758591455}
+  - component: {fileID: 758591452}
   m_Layer: 0
   m_Name: Suelo (11)
   m_TagString: Untagged
@@ -4290,24 +4328,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &758591452
-Animator:
-  serializedVersion: 3
+--- !u!33 &758591452
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95755661923381056, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758591450}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &758591453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4343,14 +4370,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &758591454
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33404053108244272, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 758591450}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &758591455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4530,10 +4549,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 802627700}
-  - component: {fileID: 802627703}
   - component: {fileID: 802627702}
-  - component: {fileID: 802627701}
   - component: {fileID: 802627704}
+  - component: {fileID: 802627701}
   m_Layer: 0
   m_Name: Suelo (9)
   m_TagString: Untagged
@@ -4555,24 +4573,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &802627701
-Animator:
-  serializedVersion: 3
+--- !u!33 &802627701
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95032085420246492, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 802627699}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &802627702
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4608,14 +4615,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &802627703
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33769611283868320, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 802627699}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &802627704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4637,10 +4636,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 811259172}
-  - component: {fileID: 811259175}
   - component: {fileID: 811259174}
-  - component: {fileID: 811259173}
   - component: {fileID: 811259176}
+  - component: {fileID: 811259173}
   m_Layer: 0
   m_Name: Suelo (20)
   m_TagString: Untagged
@@ -4662,24 +4660,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &811259173
-Animator:
-  serializedVersion: 3
+--- !u!33 &811259173
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95927770095256262, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 811259171}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &811259174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4715,14 +4702,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &811259175
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33727073910777838, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 811259171}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &811259176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4735,6 +4714,92 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 2.220446e-18, z: 0.01}
   m_Center: {x: 0.0000000018626451, y: 0, z: 2.2919266e-10}
+--- !u!1 &871039971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 871039972}
+  - component: {fileID: 871039975}
+  - component: {fileID: 871039974}
+  - component: {fileID: 871039973}
+  m_Layer: 0
+  m_Name: TechoH3
+  m_TagString: Th3
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871039972
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871039971}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.298, y: 2.372, z: -2.16}
+  m_LocalScale: {x: 0.55322564, y: 0.51137, z: 0.86913997}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &871039973
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871039971}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &871039974
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871039971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &871039975
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871039971}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &878417861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,10 +4809,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 878417862}
-  - component: {fileID: 878417865}
   - component: {fileID: 878417864}
-  - component: {fileID: 878417863}
   - component: {fileID: 878417866}
+  - component: {fileID: 878417863}
   m_Layer: 0
   m_Name: Suelo (17)
   m_TagString: Untagged
@@ -4769,24 +4833,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &878417863
-Animator:
-  serializedVersion: 3
+--- !u!33 &878417863
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95323202471144360, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 878417861}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &878417864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4822,14 +4875,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &878417865
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33243065787786430, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 878417861}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &878417866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4851,10 +4896,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 885592285}
-  - component: {fileID: 885592288}
   - component: {fileID: 885592287}
-  - component: {fileID: 885592286}
   - component: {fileID: 885592289}
+  - component: {fileID: 885592286}
   m_Layer: 0
   m_Name: Suelo (25)
   m_TagString: Untagged
@@ -4876,24 +4920,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &885592286
-Animator:
-  serializedVersion: 3
+--- !u!33 &885592286
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95865977329577176, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885592284}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &885592287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4929,14 +4962,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &885592288
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33717524145588800, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 885592284}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &885592289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4958,10 +4983,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 892689737}
-  - component: {fileID: 892689740}
   - component: {fileID: 892689739}
-  - component: {fileID: 892689738}
   - component: {fileID: 892689741}
+  - component: {fileID: 892689738}
   m_Layer: 0
   m_Name: Suelo (21)
   m_TagString: Untagged
@@ -4983,24 +5007,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &892689738
-Animator:
-  serializedVersion: 3
+--- !u!33 &892689738
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95488741084337854, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 892689736}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &892689739
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5036,14 +5049,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &892689740
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33482126842563184, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 892689736}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &892689741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5065,10 +5070,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 911418091}
-  - component: {fileID: 911418094}
   - component: {fileID: 911418093}
-  - component: {fileID: 911418092}
   - component: {fileID: 911418095}
+  - component: {fileID: 911418092}
   m_Layer: 0
   m_Name: Suelo (34)
   m_TagString: Untagged
@@ -5090,24 +5094,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &911418092
-Animator:
-  serializedVersion: 3
+--- !u!33 &911418092
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95311586204414724, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 911418090}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &911418093
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5143,14 +5136,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &911418094
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33031326261970578, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 911418090}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &911418095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5569,10 +5554,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 973897387}
-  - component: {fileID: 973897390}
   - component: {fileID: 973897389}
-  - component: {fileID: 973897388}
   - component: {fileID: 973897391}
+  - component: {fileID: 973897388}
   m_Layer: 0
   m_Name: Suelo (31)
   m_TagString: Untagged
@@ -5594,24 +5578,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &973897388
-Animator:
-  serializedVersion: 3
+--- !u!33 &973897388
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95729904725325218, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 973897386}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &973897389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5647,14 +5620,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &973897390
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33466076399087982, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 973897386}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &973897391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5765,10 +5730,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 986232726}
-  - component: {fileID: 986232729}
   - component: {fileID: 986232728}
-  - component: {fileID: 986232727}
   - component: {fileID: 986232730}
+  - component: {fileID: 986232727}
   m_Layer: 0
   m_Name: Suelo (1)
   m_TagString: Untagged
@@ -5790,24 +5754,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &986232727
-Animator:
-  serializedVersion: 3
+--- !u!33 &986232727
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95193217653481768, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 986232725}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &986232728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5843,14 +5796,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &986232729
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33262175552718074, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 986232725}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &986232730
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6257,10 +6202,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1022344765}
-  - component: {fileID: 1022344768}
   - component: {fileID: 1022344767}
-  - component: {fileID: 1022344766}
   - component: {fileID: 1022344769}
+  - component: {fileID: 1022344766}
   m_Layer: 0
   m_Name: Suelo (14)
   m_TagString: Untagged
@@ -6282,24 +6226,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1022344766
-Animator:
-  serializedVersion: 3
+--- !u!33 &1022344766
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95917752834291678, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022344764}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1022344767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6335,14 +6268,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1022344768
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33930527795013736, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1022344764}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1022344769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6469,6 +6394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movSpeed: 3
   rotSpeed: 120
+  key: {fileID: 1751641976376956, guid: cb36522daa7e2cd41bce121119328fd4, type: 2}
 --- !u!1 &1048679326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6567,10 +6493,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1053757420}
-  - component: {fileID: 1053757423}
   - component: {fileID: 1053757422}
-  - component: {fileID: 1053757421}
   - component: {fileID: 1053757424}
+  - component: {fileID: 1053757421}
   m_Layer: 0
   m_Name: Suelo (37)
   m_TagString: Untagged
@@ -6592,24 +6517,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1053757421
-Animator:
-  serializedVersion: 3
+--- !u!33 &1053757421
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95787295612923994, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053757419}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1053757422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6645,14 +6559,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1053757423
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33928341199174262, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1053757419}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1053757424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6674,10 +6580,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1069118134}
-  - component: {fileID: 1069118137}
   - component: {fileID: 1069118136}
-  - component: {fileID: 1069118135}
   - component: {fileID: 1069118138}
+  - component: {fileID: 1069118135}
   m_Layer: 0
   m_Name: Suelo (3)
   m_TagString: Untagged
@@ -6699,24 +6604,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1069118135
-Animator:
-  serializedVersion: 3
+--- !u!33 &1069118135
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95790097291775914, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1069118133}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1069118136
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6752,14 +6646,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1069118137
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33873188695988192, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1069118133}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1069118138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6870,10 +6756,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1099995191}
-  - component: {fileID: 1099995194}
   - component: {fileID: 1099995193}
-  - component: {fileID: 1099995192}
   - component: {fileID: 1099995195}
+  - component: {fileID: 1099995192}
   m_Layer: 0
   m_Name: Suelo (2)
   m_TagString: Untagged
@@ -6895,24 +6780,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1099995192
-Animator:
-  serializedVersion: 3
+--- !u!33 &1099995192
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95743464213655126, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1099995190}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1099995193
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6948,14 +6822,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1099995194
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33762808865107862, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1099995190}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1099995195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7057,6 +6923,92 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130006863}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1132332084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1132332085}
+  - component: {fileID: 1132332088}
+  - component: {fileID: 1132332087}
+  - component: {fileID: 1132332086}
+  m_Layer: 0
+  m_Name: TechoH1
+  m_TagString: Th1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1132332085
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132332084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.12, y: 2.372, z: -1.52}
+  m_LocalScale: {x: 0.8739216, y: 0.51137, z: 0.73499995}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1132332086
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132332084}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &1132332087
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132332084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1132332088
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132332084}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1147002736
 Prefab:
   m_ObjectHideFlags: 0
@@ -7310,10 +7262,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1179102358}
-  - component: {fileID: 1179102361}
   - component: {fileID: 1179102360}
-  - component: {fileID: 1179102359}
   - component: {fileID: 1179102362}
+  - component: {fileID: 1179102359}
   m_Layer: 0
   m_Name: Suelo (5)
   m_TagString: Untagged
@@ -7335,24 +7286,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1179102359
-Animator:
-  serializedVersion: 3
+--- !u!33 &1179102359
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95758197743256118, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1179102357}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1179102360
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7388,14 +7328,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1179102361
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33491535964976688, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1179102357}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1179102362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7744,10 +7676,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1233582933}
-  - component: {fileID: 1233582936}
   - component: {fileID: 1233582935}
-  - component: {fileID: 1233582934}
   - component: {fileID: 1233582937}
+  - component: {fileID: 1233582934}
   m_Layer: 0
   m_Name: Suelo (22)
   m_TagString: Untagged
@@ -7769,24 +7700,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1233582934
-Animator:
-  serializedVersion: 3
+--- !u!33 &1233582934
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95367848106324118, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1233582932}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1233582935
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7822,14 +7742,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1233582936
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33825059748818598, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1233582932}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1233582937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7940,10 +7852,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1258309489}
-  - component: {fileID: 1258309492}
   - component: {fileID: 1258309491}
-  - component: {fileID: 1258309490}
   - component: {fileID: 1258309493}
+  - component: {fileID: 1258309490}
   m_Layer: 0
   m_Name: Suelo (29)
   m_TagString: Untagged
@@ -7965,24 +7876,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1258309490
-Animator:
-  serializedVersion: 3
+--- !u!33 &1258309490
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95873050911834142, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258309488}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1258309491
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8018,14 +7918,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1258309492
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33968365464840232, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1258309488}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1258309493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8210,10 +8102,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1300390824}
-  - component: {fileID: 1300390827}
   - component: {fileID: 1300390826}
-  - component: {fileID: 1300390825}
   - component: {fileID: 1300390828}
+  - component: {fileID: 1300390825}
   m_Layer: 0
   m_Name: Suelo (15)
   m_TagString: Untagged
@@ -8235,24 +8126,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1300390825
-Animator:
-  serializedVersion: 3
+--- !u!33 &1300390825
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95938500343849076, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1300390823}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1300390826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8288,14 +8168,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1300390827
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33355555223487464, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300390823}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1300390828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8406,10 +8278,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1318326222}
-  - component: {fileID: 1318326225}
   - component: {fileID: 1318326224}
-  - component: {fileID: 1318326223}
   - component: {fileID: 1318326226}
+  - component: {fileID: 1318326223}
   m_Layer: 0
   m_Name: Suelo (39)
   m_TagString: Untagged
@@ -8431,24 +8302,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1318326223
-Animator:
-  serializedVersion: 3
+--- !u!33 &1318326223
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95210089423792050, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318326221}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1318326224
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8484,14 +8344,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1318326225
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33725500017116678, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1318326221}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1318326226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8638,10 +8490,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1342560863}
-  - component: {fileID: 1342560866}
   - component: {fileID: 1342560865}
-  - component: {fileID: 1342560864}
   - component: {fileID: 1342560867}
+  - component: {fileID: 1342560864}
   m_Layer: 0
   m_Name: Suelo (6)
   m_TagString: Untagged
@@ -8663,24 +8514,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1342560864
-Animator:
-  serializedVersion: 3
+--- !u!33 &1342560864
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95095683120893878, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1342560862}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1342560865
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8716,14 +8556,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1342560866
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33698116671644064, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1342560862}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1342560867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8864,10 +8696,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1384690218}
-  - component: {fileID: 1384690221}
   - component: {fileID: 1384690220}
-  - component: {fileID: 1384690219}
   - component: {fileID: 1384690222}
+  - component: {fileID: 1384690219}
   m_Layer: 0
   m_Name: Suelo (27)
   m_TagString: Untagged
@@ -8889,24 +8720,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1384690219
-Animator:
-  serializedVersion: 3
+--- !u!33 &1384690219
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95539363129013266, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384690217}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1384690220
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8942,14 +8762,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1384690221
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33682806859501696, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1384690217}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1384690222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8971,10 +8783,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1389277089}
-  - component: {fileID: 1389277092}
   - component: {fileID: 1389277091}
-  - component: {fileID: 1389277090}
   - component: {fileID: 1389277093}
+  - component: {fileID: 1389277090}
   m_Layer: 0
   m_Name: Suelo (16)
   m_TagString: Untagged
@@ -8996,24 +8807,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1389277090
-Animator:
-  serializedVersion: 3
+--- !u!33 &1389277090
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95951976464017312, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389277088}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1389277091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9049,14 +8849,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1389277092
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33444923262693452, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1389277088}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1389277093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9167,10 +8959,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1400829126}
-  - component: {fileID: 1400829129}
   - component: {fileID: 1400829128}
-  - component: {fileID: 1400829127}
   - component: {fileID: 1400829130}
+  - component: {fileID: 1400829127}
   m_Layer: 0
   m_Name: Suelo (4)
   m_TagString: Untagged
@@ -9192,24 +8983,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1400829127
-Animator:
-  serializedVersion: 3
+--- !u!33 &1400829127
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95210329750047554, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400829125}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1400829128
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9245,14 +9025,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1400829129
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33972977850794278, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1400829125}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1400829130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9398,10 +9170,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1424159708}
-  - component: {fileID: 1424159711}
   - component: {fileID: 1424159710}
-  - component: {fileID: 1424159709}
   - component: {fileID: 1424159712}
+  - component: {fileID: 1424159709}
   m_Layer: 0
   m_Name: Suelo (13)
   m_TagString: Untagged
@@ -9423,24 +9194,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1424159709
-Animator:
-  serializedVersion: 3
+--- !u!33 &1424159709
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95357730893615962, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1424159707}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1424159710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9476,14 +9236,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1424159711
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33931065228902126, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1424159707}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1424159712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9505,10 +9257,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1438207308}
-  - component: {fileID: 1438207311}
   - component: {fileID: 1438207310}
-  - component: {fileID: 1438207309}
   - component: {fileID: 1438207312}
+  - component: {fileID: 1438207309}
   m_Layer: 0
   m_Name: Suelo (19)
   m_TagString: Untagged
@@ -9530,24 +9281,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1438207309
-Animator:
-  serializedVersion: 3
+--- !u!33 &1438207309
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95417677546348332, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1438207307}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1438207310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9583,14 +9323,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1438207311
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33637054824515520, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1438207307}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1438207312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9603,6 +9335,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 2.220446e-18, z: 0.01}
   m_Center: {x: 0.0000000018626451, y: 0, z: 2.3283064e-10}
+--- !u!1 &1444077157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1444077158}
+  m_Layer: 0
+  m_Name: Techos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444077158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444077157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 685892516}
+  - {fileID: 1132332085}
+  - {fileID: 2115935377}
+  - {fileID: 1934234126}
+  - {fileID: 871039972}
+  - {fileID: 1481421374}
+  - {fileID: 743715246}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450589727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9631,6 +9398,92 @@ Transform:
   m_Father: {fileID: 1012226688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1481421373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1481421374}
+  - component: {fileID: 1481421377}
+  - component: {fileID: 1481421376}
+  - component: {fileID: 1481421375}
+  m_Layer: 0
+  m_Name: TechoH4
+  m_TagString: Th4
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1481421374
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481421373}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.92, y: 2.372, z: -2.16}
+  m_LocalScale: {x: 0.567664, y: 0.51137, z: 0.86913997}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1481421375
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481421373}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &1481421376
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481421373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1481421377
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481421373}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1491036980
 GameObject:
   m_ObjectHideFlags: 0
@@ -9875,10 +9728,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1543739287}
-  - component: {fileID: 1543739290}
   - component: {fileID: 1543739289}
-  - component: {fileID: 1543739288}
   - component: {fileID: 1543739291}
+  - component: {fileID: 1543739288}
   m_Layer: 0
   m_Name: Suelo (42)
   m_TagString: Untagged
@@ -9900,24 +9752,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1543739288
-Animator:
-  serializedVersion: 3
+--- !u!33 &1543739288
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95866910149351346, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543739286}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1543739289
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9953,14 +9794,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1543739290
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33122195892817924, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1543739286}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1543739291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10453,10 +10286,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1688165946}
-  - component: {fileID: 1688165949}
   - component: {fileID: 1688165948}
-  - component: {fileID: 1688165947}
   - component: {fileID: 1688165950}
+  - component: {fileID: 1688165947}
   m_Layer: 0
   m_Name: Suelo (35)
   m_TagString: Untagged
@@ -10478,24 +10310,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1688165947
-Animator:
-  serializedVersion: 3
+--- !u!33 &1688165947
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95790338220856436, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688165945}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1688165948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10531,14 +10352,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1688165949
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33940121164851530, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688165945}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1688165950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10679,10 +10492,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1800395877}
-  - component: {fileID: 1800395880}
   - component: {fileID: 1800395879}
-  - component: {fileID: 1800395878}
   - component: {fileID: 1800395881}
+  - component: {fileID: 1800395878}
   m_Layer: 0
   m_Name: Suelo (8)
   m_TagString: Untagged
@@ -10704,24 +10516,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1800395878
-Animator:
-  serializedVersion: 3
+--- !u!33 &1800395878
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95492888978000044, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1800395876}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1800395879
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10757,14 +10558,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1800395880
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33594834843343076, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1800395876}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1800395881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10786,10 +10579,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1803669740}
-  - component: {fileID: 1803669743}
   - component: {fileID: 1803669742}
-  - component: {fileID: 1803669741}
   - component: {fileID: 1803669744}
+  - component: {fileID: 1803669741}
   m_Layer: 0
   m_Name: Suelo (23)
   m_TagString: Untagged
@@ -10811,24 +10603,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1803669741
-Animator:
-  serializedVersion: 3
+--- !u!33 &1803669741
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95783064838804732, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1803669739}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1803669742
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10864,14 +10645,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1803669743
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33720460203944672, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1803669739}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1803669744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10945,6 +10718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 3
   playerRotation: 150
+  Key: {fileID: 0}
   textCode: {fileID: 772726206}
 --- !u!1 &1827174942
 GameObject:
@@ -10955,10 +10729,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1827174943}
-  - component: {fileID: 1827174946}
   - component: {fileID: 1827174945}
-  - component: {fileID: 1827174944}
   - component: {fileID: 1827174947}
+  - component: {fileID: 1827174944}
   m_Layer: 0
   m_Name: Suelo (10)
   m_TagString: Untagged
@@ -10980,24 +10753,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1827174944
-Animator:
-  serializedVersion: 3
+--- !u!33 &1827174944
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95295083712435020, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1827174942}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1827174945
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11033,14 +10795,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1827174946
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33115103713116796, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1827174942}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1827174947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11240,10 +10994,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1881523101}
-  - component: {fileID: 1881523104}
   - component: {fileID: 1881523103}
-  - component: {fileID: 1881523102}
   - component: {fileID: 1881523105}
+  - component: {fileID: 1881523102}
   m_Layer: 0
   m_Name: Suelo (33)
   m_TagString: Untagged
@@ -11265,24 +11018,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1881523102
-Animator:
-  serializedVersion: 3
+--- !u!33 &1881523102
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95149647003170196, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881523100}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1881523103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11318,14 +11060,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1881523104
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33862901528313460, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1881523100}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1881523105
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11451,6 +11185,92 @@ BoxCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: a6a60659abb4d9d4b934feebd3dcc952, type: 2}
   m_PrefabInternal: {fileID: 476947444}
+--- !u!1 &1934234125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1934234126}
+  - component: {fileID: 1934234129}
+  - component: {fileID: 1934234128}
+  - component: {fileID: 1934234127}
+  m_Layer: 0
+  m_Name: TechoH2
+  m_TagString: Th2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934234126
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934234125}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.56, y: 2.372, z: -2.16}
+  m_LocalScale: {x: 0.5957822, y: 0.51137, z: 0.86913586}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1934234127
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934234125}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &1934234128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934234125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1934234129
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934234125}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1937171784
 GameObject:
   m_ObjectHideFlags: 0
@@ -11460,10 +11280,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1937171785}
-  - component: {fileID: 1937171788}
   - component: {fileID: 1937171787}
-  - component: {fileID: 1937171786}
   - component: {fileID: 1937171789}
+  - component: {fileID: 1937171786}
   m_Layer: 0
   m_Name: Suelo (12)
   m_TagString: Untagged
@@ -11485,24 +11304,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1937171786
-Animator:
-  serializedVersion: 3
+--- !u!33 &1937171786
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95442175365690732, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937171784}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &1937171787
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11538,14 +11346,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1937171788
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33587456055174816, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1937171784}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &1937171789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12201,13 +12001,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2052817582}
-  m_LocalRotation: {x: 0.70938706, y: -0.09605235, z: 0.09596306, w: 0.6916177}
-  m_LocalPosition: {x: -14.9, y: 16.98, z: -1.66}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.89, y: 16.98, z: -1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 91.44, y: -7.515991, z: 8.091995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064635898
 GameObject:
   m_ObjectHideFlags: 0
@@ -12407,10 +12207,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2089757866}
-  - component: {fileID: 2089757869}
   - component: {fileID: 2089757868}
-  - component: {fileID: 2089757867}
   - component: {fileID: 2089757870}
+  - component: {fileID: 2089757867}
   m_Layer: 0
   m_Name: Suelo (24)
   m_TagString: Untagged
@@ -12432,24 +12231,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2089757867
-Animator:
-  serializedVersion: 3
+--- !u!33 &2089757867
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95929574584603312, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089757865}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &2089757868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12485,14 +12273,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &2089757869
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33981059418676634, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089757865}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &2089757870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12603,10 +12383,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2109469661}
-  - component: {fileID: 2109469664}
   - component: {fileID: 2109469663}
-  - component: {fileID: 2109469662}
   - component: {fileID: 2109469665}
+  - component: {fileID: 2109469662}
   m_Layer: 0
   m_Name: Suelo (26)
   m_TagString: Untagged
@@ -12628,24 +12407,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2109469662
-Animator:
-  serializedVersion: 3
+--- !u!33 &2109469662
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95071660745325676, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2109469660}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &2109469663
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12681,14 +12449,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &2109469664
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33190679475064066, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2109469660}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &2109469665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12701,6 +12461,92 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 2.220446e-18, z: 0.01}
   m_Center: {x: 0.0000000037252903, y: 0, z: 2.3283064e-10}
+--- !u!1 &2115935376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2115935377}
+  - component: {fileID: 2115935380}
+  - component: {fileID: 2115935379}
+  - component: {fileID: 2115935378}
+  m_Layer: 0
+  m_Name: TechoH5
+  m_TagString: Th5
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2115935377
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115935376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.6, y: 2.372, z: -18.01}
+  m_LocalScale: {x: 0.65206, y: 0.51137, z: 0.576575}
+  m_Children: []
+  m_Father: {fileID: 1444077158}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2115935378
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115935376}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6364f014b4a8c0a4d848788e8efb1a65, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &2115935379
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115935376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &2115935380
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115935376}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2121630856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12888,10 +12734,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2131916585}
-  - component: {fileID: 2131916588}
   - component: {fileID: 2131916587}
-  - component: {fileID: 2131916586}
   - component: {fileID: 2131916589}
+  - component: {fileID: 2131916586}
   m_Layer: 0
   m_Name: Suelo (7)
   m_TagString: Untagged
@@ -12913,24 +12758,13 @@ Transform:
   m_Father: {fileID: 48095962}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2131916586
-Animator:
-  serializedVersion: 3
+--- !u!33 &2131916586
+MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95952926464292354, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2131916584}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Mesh: {fileID: 0}
 --- !u!23 &2131916587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12966,14 +12800,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &2131916588
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33577277261426396, guid: 90fd2f4e238fb2247a8660c7bcd243d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2131916584}
-  m_Mesh: {fileID: 4300000, guid: 29f351c2c63ddc14c936e2eb53815abd, type: 3}
 --- !u!65 &2131916589
 BoxCollider:
   m_ObjectHideFlags: 0

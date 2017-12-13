@@ -22,6 +22,10 @@ public class Dog : MonoBehaviour {
     public static bool isRoom5 = false;
     private float searchTimer;
 
+    public GameObject key;
+    private GameObject cKey;
+    private float force = 300.0f;
+
     private void Awake()
     {
         dPos = transform;
@@ -116,7 +120,11 @@ public class Dog : MonoBehaviour {
             if (searchTimer >= 16.0f)
             {
                 GameManager.Instance.haveKeyFromRoom5 = true;
-                Start();
+                    cKey = Instantiate(key);
+                    cKey.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * force);
+                    Physics.IgnoreCollision(cKey.GetComponent<Collider>(), this.GetComponent<Collider>());
+                    Destroy(cKey, 2.0f);
+                    Start();
             }
          }    
         }

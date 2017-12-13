@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject IntroducePassT;
 
+    public GameObject light;
+
 
     private bool canGoElevator = false;
 
@@ -69,6 +71,8 @@ public class GameManager : MonoBehaviour {
             askPass.SetActive(false);
             showPassF.SetActive(true);
             canGoElevator = true;
+            light.GetComponent<Light>().intensity = 1;
+            light.gameObject.transform.rotation = Quaternion.Euler(new Vector3(90.0f, transform.rotation.y, transform.rotation.z));
         }
 
     }
