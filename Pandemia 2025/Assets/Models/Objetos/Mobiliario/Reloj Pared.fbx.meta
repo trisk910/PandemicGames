@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 113af639668f13f4bb9b6bd05a148c92
+timeCreated: 1513166648
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: group1
+    100002: maletin:pCube23
+    100004: maletin:pCube24
+    100006: maletin:pCylinder28
+    100008: maletin:pSphere12
+    100010: //RootNode
+    400000: group1
+    400002: maletin:pCube23
+    400004: maletin:pCube24
+    400006: maletin:pCylinder28
+    400008: maletin:pSphere12
+    400010: //RootNode
+    2300000: maletin:pCube23
+    2300002: maletin:pCube24
+    2300004: maletin:pCylinder28
+    2300006: maletin:pSphere12
+    3300000: maletin:pCube23
+    3300002: maletin:pCube24
+    3300004: maletin:pCylinder28
+    3300006: maletin:pSphere12
+    4300000: maletin:pCylinder28
+    4300002: maletin:pSphere12
+    4300004: maletin:pCube23
+    4300006: maletin:pCube24
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d95a7b75f42eb8842b4a21a752e50c8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maletin_blinn1
+    second: {fileID: 2100000, guid: fa400fc0c6ae32b42a40aa667af8cc2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maletin_lambert12
+    second: {fileID: 2100000, guid: 01173ea921edb544787964d46fb0f3e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maletin_lambert13
+    second: {fileID: 2100000, guid: 6b5818c6b014ba94281b716c042147cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maletin_lambert2
+    second: {fileID: 2100000, guid: c89acfbafde40af4398c4f04e6e44478, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

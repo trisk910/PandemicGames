@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: ff05a98686940ff408fc22f2f5a73eb5
+timeCreated: 1513166765
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: maletin:group1
+    100002: maletin:group2
+    100004: maletin:pCube25
+    100006: maletin:pCube26
+    100008: maletin:pCube27
+    100010: maletin:pCube28
+    100012: maletin:pCube29
+    100014: maletin:pCube30
+    100016: maletin:pCube31
+    100018: maletin:pCube32
+    100020: maletin:pPlane1
+    100022: maletin:transform19
+    100024: maletin:transform20
+    100026: maletin:transform21
+    100028: maletin:transform22
+    100030: maletin:transform23
+    100032: maletin:transform24
+    100034: maletin:transform25
+    100036: maletin:transform26
+    100038: maletin:transform27
+    100040: //RootNode
+    400000: maletin:group1
+    400002: maletin:group2
+    400004: maletin:pCube25
+    400006: maletin:pCube26
+    400008: maletin:pCube27
+    400010: maletin:pCube28
+    400012: maletin:pCube29
+    400014: maletin:pCube30
+    400016: maletin:pCube31
+    400018: maletin:pCube32
+    400020: maletin:pPlane1
+    400022: maletin:transform19
+    400024: maletin:transform20
+    400026: maletin:transform21
+    400028: maletin:transform22
+    400030: maletin:transform23
+    400032: maletin:transform24
+    400034: maletin:transform25
+    400036: maletin:transform26
+    400038: maletin:transform27
+    400040: //RootNode
+    2300000: maletin:group2
+    3300000: maletin:group2
+    4300000: maletin:group2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d95a7b75f42eb8842b4a21a752e50c8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 4691d02992b73ce42b011d2aa0d8f5a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 2869f0885c02744488fa001393625321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: fb795dfed25912145ac5d8798d0da16c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maletin_lambert3
+    second: {fileID: 2100000, guid: fbba7711d2ea0ae4ab37694e99e1900b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

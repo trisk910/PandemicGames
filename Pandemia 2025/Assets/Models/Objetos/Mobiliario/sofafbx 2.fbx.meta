@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 980578f9977dece4d978cdb29ae54897
+timeCreated: 1513166913
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Back
+    100002: Back_Cushion_left
+    100004: Back_Cushion_middle
+    100006: Back_Cushion_right
+    100008: Base
+    100010: Leg_back_left
+    100012: Leg_back_right
+    100014: Leg_front_left
+    100016: Leg_front_right
+    100018: Seat_Cushion_left
+    100020: Seat_Cushion_middle
+    100022: Seat_Cushion_right
+    100024: Side_left
+    100026: Side_right
+    100028: //RootNode
+    400000: Back
+    400002: Back_Cushion_left
+    400004: Back_Cushion_middle
+    400006: Back_Cushion_right
+    400008: Base
+    400010: Leg_back_left
+    400012: Leg_back_right
+    400014: Leg_front_left
+    400016: Leg_front_right
+    400018: Seat_Cushion_left
+    400020: Seat_Cushion_middle
+    400022: Seat_Cushion_right
+    400024: Side_left
+    400026: Side_right
+    400028: //RootNode
+    2300000: Back
+    2300002: Back_Cushion_left
+    2300004: Back_Cushion_middle
+    2300006: Back_Cushion_right
+    2300008: Base
+    2300010: Leg_back_left
+    2300012: Leg_back_right
+    2300014: Leg_front_left
+    2300016: Leg_front_right
+    2300018: Seat_Cushion_left
+    2300020: Seat_Cushion_middle
+    2300022: Seat_Cushion_right
+    2300024: Side_left
+    2300026: Side_right
+    3300000: Back
+    3300002: Back_Cushion_left
+    3300004: Back_Cushion_middle
+    3300006: Back_Cushion_right
+    3300008: Base
+    3300010: Leg_back_left
+    3300012: Leg_back_right
+    3300014: Leg_front_left
+    3300016: Leg_front_right
+    3300018: Seat_Cushion_left
+    3300020: Seat_Cushion_middle
+    3300022: Seat_Cushion_right
+    3300024: Side_left
+    3300026: Side_right
+    4300000: Base
+    4300002: Side_right
+    4300004: Leg_front_right
+    4300006: Leg_back_right
+    4300008: Leg_front_left
+    4300010: Leg_back_left
+    4300012: Side_left
+    4300014: Back
+    4300016: Seat_Cushion_right
+    4300018: Seat_Cushion_middle
+    4300020: Seat_Cushion_left
+    4300022: Back_Cushion_right
+    4300024: Back_Cushion_middle
+    4300026: Back_Cushion_left
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 5428adb6d63abc64a92325c8eb2dca4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: b0b62827805c8f045ac66b5b0b315b92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: b0b62827805c8f045ac66b5b0b315b92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: b0b62827805c8f045ac66b5b0b315b92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: fe64c19784833f44a94a14029ec4c9c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: b0b62827805c8f045ac66b5b0b315b92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: 7c5e22cbc2539ca44814ff7b84795716, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
