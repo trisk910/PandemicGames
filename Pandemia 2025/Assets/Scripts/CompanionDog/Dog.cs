@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dog : MonoBehaviour {
+public class Dog : MonoBehaviour
+{
 
     private GameObject Player;
     private GameObject mueble1;
     private GameObject mueble2;
     private GameObject muebleLlave;
+
+    private GameObject mueble1h3;
+    private GameObject mueble2h3;
+    private GameObject mueble3h3;
 
     public float movSpeed;
     public float rotSpeed;
@@ -20,23 +25,30 @@ public class Dog : MonoBehaviour {
     public static bool search;
 
     public static bool isRoom5 = false;
+    public static bool isRoom3 = false;
     private float searchTimer;
 
     public GameObject key;
     private GameObject cKey;
     private float force = 300.0f;
+    private float forced = 400.0f;
 
     private void Awake()
     {
         dPos = transform;
     }
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
 
         Player = (GameObject)GameObject.FindGameObjectWithTag("Player");
         mueble1 = (GameObject)GameObject.FindGameObjectWithTag("Mueble1");
         mueble2 = (GameObject)GameObject.FindGameObjectWithTag("Mueble2");
-        muebleLlave  = (GameObject)GameObject.FindGameObjectWithTag("MuebleConLlave");
+        muebleLlave = (GameObject)GameObject.FindGameObjectWithTag("MuebleConLlave");
+
+        mueble1h3 = (GameObject)GameObject.FindGameObjectWithTag("Mueble1H3");
+        mueble2h3 = (GameObject)GameObject.FindGameObjectWithTag("Mueble2H3");
+        mueble3h3 = (GameObject)GameObject.FindGameObjectWithTag("Mueble3H3");
 
         search = false;
         follow = true;
@@ -49,7 +61,7 @@ public class Dog : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(!stopFollow)
+        if (!stopFollow)
             target = Player.transform;
 
         //Debug.Log(searchTimer + " Time");
@@ -78,23 +90,32 @@ public class Dog : MonoBehaviour {
         if (other.gameObject.tag == "TriggerH5")
             isRoom5 = true;
 
-            
+        if (other.gameObject.tag == "TriggerH3")
+            isRoom3 = true;
+
+
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            
-                follow = true;
+
+            follow = true;
         }
 
         if (other.gameObject.tag == "TriggerH5")
             isRoom5 = false;
+
+        if (other.gameObject.tag == "TriggerH3")
+            isRoom3 = false;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            gameObject.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * -forced);
+        }
     }
 
     public void SearchForItems()
@@ -106,29 +127,50 @@ public class Dog : MonoBehaviour {
             searchTimer += Time.fixedDeltaTime;
 
             if (isRoom5)
-            { 
-
-            if (searchTimer >= 0.0f)
-                target = mueble1.transform;
-
-            if (searchTimer >= 6.0f)
-                target = mueble2.transform;
-
-            if (searchTimer >= 11.0f)
-                target = muebleLlave.transform;
-
-            if (searchTimer >= 16.0f)
             {
-                GameManager.Instance.haveKeyFromRoom5 = true;
-                    cKey = Instantiate(key);
-                    cKey.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * force);
-                    Physics.IgnoreCollision(cKey.GetComponent<Collider>(), this.GetComponent<Collider>());
-                    Destroy(cKey, 2.0f);
+
+                if (searchTimer >= 0.0f)
+                    target = mueble1.transform;
+
+                if (searchTimer >= 6.0f)
+                    target = mueble2.transform;
+
+                if (searchTimer >= 11.0f)
+                    target = muebleLlave.transform;
+
+                if (searchTimer >= 16.0f)
+                {
+                    GameManager.Instance.haveKeyFromRoom5 = true;
+                    if (GameManager.Instance.respawnKey)
+                    {
+                        cKey = Instantiate(key);
+                        cKey.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * force);
+                        Physics.IgnoreCollision(cKey.GetComponent<Collider>(), this.GetComponent<Collider>());
+                        Destroy(cKey, 1.8f);
+                    }
+                    GameManager.Instance.respawnKey = false;
                     Start();
+                }
             }
-         }    
+            if (isRoom3)
+            {
+                if (searchTimer >= 0.0f)
+                    target = mueble1h3.transform;
+
+                if (searchTimer >= 6.0f)
+                    target = mueble2h3.transform;
+
+                if (searchTimer >= 11.0f)
+                    target = mueble3h3.transform;
+
+                if (searchTimer >= 16.0f)
+                {
+                    Start();
+                }
+
+            }
+
+
         }
-
     }
-
 }

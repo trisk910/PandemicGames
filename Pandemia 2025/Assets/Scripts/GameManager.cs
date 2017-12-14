@@ -18,10 +18,13 @@ public class GameManager : MonoBehaviour {
 
     public GameObject askPass;
     public GameObject showPassF;
+    public bool canGoGetCode = false;
 
     public GameObject IntroducePassT;
 
     public GameObject light;
+
+    public bool respawnKey = true;
 
 
     private bool canGoElevator = false;
@@ -65,6 +68,7 @@ public class GameManager : MonoBehaviour {
         if(showBatteriaInRoom5 && haveTheBaterieFromRoom1)
         {
             askPass.SetActive(true);
+            canGoGetCode = true;
         }
         if (havePassword && showHavePass)
         {

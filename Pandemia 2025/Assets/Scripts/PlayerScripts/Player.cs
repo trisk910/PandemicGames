@@ -25,8 +25,7 @@ public class Player : MonoBehaviour
     private GameObject th3;
     private GameObject th1;
 
-    public GameObject Key;
-    private GameObject cKey;
+   
 
     public GameObject textCode;
     //Bolean Puertas
@@ -59,7 +58,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        CallDogToSearch();      
+        CallDogToSearch();
+        
 
     }
 
@@ -94,13 +94,15 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(Dog.isRoom5==true)
+            if(Dog.isRoom5==true || Dog.isRoom3 == true)
             {
                 Dog.search = true;
                
             }
         }
     }
+
+    
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -129,8 +131,11 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "Ph4")
         {
-            Ph4.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
-            Destroy(th4);
+            if (GameManager.Instance.canGoGetCode)
+            {
+                Ph4.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
+                Destroy(th4);
+            }
         }
 
         if (collision.gameObject.tag == "Ph3")

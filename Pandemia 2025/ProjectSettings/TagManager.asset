@@ -28,6 +28,10 @@ TagManager:
   - Th3
   - Th4
   - Th6
+  - TriggerH3
+  - Mueble1H3
+  - Mueble2H3
+  - Mueble3H3
   layers:
   - Default
   - TransparentFX
