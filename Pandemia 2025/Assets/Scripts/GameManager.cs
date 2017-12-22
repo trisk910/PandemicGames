@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance;
 
+    public bool switchCharacter = false;
+
     public bool haveKeyFromRoom5 = false;
     public bool haveTheBaterieFromRoom1 = false;
     public bool havePassword = false;
@@ -29,6 +31,11 @@ public class GameManager : MonoBehaviour {
 
     private bool canGoElevator = false;
 
+    private GameObject Lights;
+
+
+    private Dog DogFunctions;
+
     void Awake()
     {
         if (Instance == null)
@@ -44,11 +51,18 @@ public class GameManager : MonoBehaviour {
 
         BatteriaInRoom5 = (GameObject)GameObject.FindGameObjectWithTag("BatteriaH5");
 
+        Lights = (GameObject)GameObject.FindGameObjectWithTag("Lights");
+
         BatteriaInRoom5.SetActive(false);
 
         askPass.SetActive(false);
         showPassF.SetActive(false);
         IntroducePassT.SetActive(false);
+
+        light.GetComponent<Light>().intensity = 0;
+        Lights.gameObject.SetActive(false);
+
+        DogFunctions = FindObjectOfType<Dog>();
     }
 	
 	// Update is called once per frame
@@ -75,8 +89,8 @@ public class GameManager : MonoBehaviour {
             askPass.SetActive(false);
             showPassF.SetActive(true);
             canGoElevator = true;
-            light.GetComponent<Light>().intensity = 1;
-            light.gameObject.transform.rotation = Quaternion.Euler(new Vector3(90.0f, transform.rotation.y, transform.rotation.z));
+
+            Lights.gameObject.SetActive(true);
         }
 
     }

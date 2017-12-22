@@ -32,6 +32,8 @@ TagManager:
   - Mueble1H3
   - Mueble2H3
   - Mueble3H3
+  - Lights
+  - Dog
   layers:
   - Default
   - TransparentFX

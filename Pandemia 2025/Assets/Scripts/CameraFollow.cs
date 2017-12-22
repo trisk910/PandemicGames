@@ -8,6 +8,11 @@ namespace CompleteProject
         public Transform target;            // The position that that camera will be following.
         public float smoothing = 5f;        // The speed with which the camera will be following.
 
+        private Dog DogFunctions;
+
+        private GameObject Player;
+        private GameObject Doggy;
+
 
         Vector3 offset;                     // The initial offset from the target.
 
@@ -16,6 +21,11 @@ namespace CompleteProject
         {
             // Calculate the initial offset.
             offset = transform.position - target.position;
+
+            Player = (GameObject)GameObject.FindGameObjectWithTag("Player");
+            Doggy = (GameObject)GameObject.FindGameObjectWithTag("Dog");
+
+            DogFunctions = FindObjectOfType<Dog>();
         }
 
 
@@ -26,6 +36,27 @@ namespace CompleteProject
 
             // Smoothly interpolate between the camera's current position and it's target position.
             transform.position = Vector3.Lerp (transform.position, targetCamPos, smoothing * Time.deltaTime);
+
+            SwitchCharacter();
+        }
+
+        void SwitchCharacter()
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                Dog.isControlled = false;
+                Input.ResetInputAxes();
+                target = Player.gameObject.transform;
+                GameManager.Instance.switchCharacter = false;
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Dog.isControlled = true;
+                Input.ResetInputAxes();
+                target = Doggy.gameObject.transform;
+                GameManager.Instance.switchCharacter = true;
+            }
         }
     }
 }

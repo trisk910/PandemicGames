@@ -17,12 +17,16 @@ public class Dog : MonoBehaviour
     public float movSpeed;
     public float rotSpeed;
 
+    public float pSpeed;
+    public float pRotation;
+
     private Transform dPos;
     private Transform target;
 
     public static bool stopFollow = false;
-    private bool follow;
+    public static bool follow;
     public static bool search;
+    public static bool isControlled = false;
 
     public static bool isRoom5 = false;
     public static bool isRoom3 = false;
@@ -68,10 +72,13 @@ public class Dog : MonoBehaviour
 
         if (follow == true)
         {
-            dPos.rotation = Quaternion.Slerp(dPos.rotation, Quaternion.LookRotation(target.position - dPos.position), rotSpeed * Time.deltaTime);
-            dPos.position += dPos.forward * movSpeed * Time.deltaTime;
+            if (!isControlled)
+            {
+                dPos.rotation = Quaternion.Slerp(dPos.rotation, Quaternion.LookRotation(target.position - dPos.position), rotSpeed * Time.deltaTime);
+                dPos.position += dPos.forward * movSpeed * Time.deltaTime;
+            }
         }
-
+    
         if (stopFollow)
         {
             dPos.rotation = Quaternion.Slerp(dPos.rotation, Quaternion.LookRotation(target.position - dPos.position), rotSpeed * Time.deltaTime);
@@ -79,7 +86,41 @@ public class Dog : MonoBehaviour
         }
 
         SearchForItems();
+
+        MoveDog();
     }
+
+    private void MoveDog()
+    {
+        if (GameManager.Instance.switchCharacter)
+        {
+            
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.Translate(Vector3.forward * pSpeed * Time.deltaTime);
+                //gameObject.GetComponent<Animation>().Play("run");
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.Translate(Vector3.back * pSpeed * Time.deltaTime);
+              //  gameObject.GetComponent<Animation>().Play("run");
+            }
+            else if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+               // gameObject.GetComponent<Animation>().Play("idle");
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(new Vector3(0, pRotation * Time.deltaTime, 0));
+
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(new Vector3(0, -pRotation * Time.deltaTime, 0));
+
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
