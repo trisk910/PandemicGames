@@ -39,9 +39,11 @@ public class GameManager : MonoBehaviour {
 
 
     private GameObject Keyboard;
-    private string password = "";
+    public bool showKeyboard = false;
+    public string password = "";
+   
     public float randomPassword;
-    private GameObject currentPassword;
+   
     private float min = 0, max = 9;
 
     void Awake()
@@ -58,10 +60,12 @@ public class GameManager : MonoBehaviour {
     void Start () {
 
         Keyboard = (GameObject)GameObject.FindGameObjectWithTag("showKeyboard");
-        currentPassword = (GameObject)GameObject.FindGameObjectWithTag("CurrentPassword");
+        
         makePassword();
 
-       //------>>>>>> currentPassword.gameObject.GetComponent<Text>().text() = randomPassword;
+        Keyboard.SetActive(false);
+
+      
 
         BatteriaInRoom5 = (GameObject)GameObject.FindGameObjectWithTag("BatteriaH5");
 
@@ -70,8 +74,8 @@ public class GameManager : MonoBehaviour {
         BatteriaInRoom5.SetActive(false);
 
         askPass.SetActive(false);
-        showPassF.SetActive(false);
-        IntroducePassT.SetActive(false);
+       // showPassF.SetActive(false);
+       // IntroducePassT.SetActive(false);
 
         light.GetComponent<Light>().intensity = 0;
         Lights.gameObject.SetActive(false);
@@ -89,19 +93,18 @@ public class GameManager : MonoBehaviour {
 
         IntroducePassword();
 
-        if (havePassword)
-            IntroducePassT.SetActive(true);
-    }
+        /*if (havePassword)
+            IntroducePassT.SetActive(true);*/
 
-    public void OpenKeyboard()
-    {
+       if(showKeyboard)
+            Keyboard.SetActive(true);
 
-    }
+        if (!showKeyboard)
+            Keyboard.SetActive(false);        
 
-    public void CloseKeyboard()
-    {
-        
-    }
+    }   
+
+   
 
         void IntroducePassword()
     {
@@ -110,17 +113,13 @@ public class GameManager : MonoBehaviour {
             askPass.SetActive(true);
             canGoGetCode = true;
         }
-        if (havePassword && showHavePass)
-        {
-            askPass.SetActive(false);
-
-            OpenKeyboard();
-
-            if(password == randomPassword+ToString())
+        if (askPass)
+        {                      
+            if (string.Equals(InputText.currentPassword, randomPassword.ToString()))
             {
-                showPassF.SetActive(true);
+                
                 canGoElevator = true;
-
+                showKeyboard = false;
                 Lights.gameObject.SetActive(true); }
 
             }
@@ -141,4 +140,6 @@ public class GameManager : MonoBehaviour {
         Mathf.RoundToInt(randomPassword);
         Debug.Log("rpass= " + randomPassword);
     }
+
+
 }

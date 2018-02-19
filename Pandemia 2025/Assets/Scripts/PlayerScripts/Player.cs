@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private GameObject th3;
     private GameObject th1;
 
-   
+    
 
     public GameObject textCode;
     //Bolean Puertas
@@ -52,6 +52,8 @@ public class Player : MonoBehaviour
 
         DogFunctions = FindObjectOfType<Dog>();
 
+
+        
     }
 
     // Update is called once per frame
@@ -201,5 +203,19 @@ public class Player : MonoBehaviour
             GameManager.Instance.showHavePass = true;
         }
 
+        if (other.gameObject.tag == "TriggerKeyboard") 
+        {
+            if(GameManager.Instance.showBatteriaInRoom5)
+                GameManager.Instance.showKeyboard = true;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider exit)
+    {
+        if (exit.gameObject.tag == "TriggerKeyboard") ;
+        {
+            GameManager.Instance.showKeyboard = false;
+        }
     }
 }

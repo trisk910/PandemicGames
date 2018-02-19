@@ -42,7 +42,7 @@ namespace CompleteProject
 
         void SwitchCharacter()
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 Dog.isControlled = false;
                 Input.ResetInputAxes();
@@ -50,7 +50,7 @@ namespace CompleteProject
                 GameManager.Instance.switchCharacter = false;
             }
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.T))
             {
                 Dog.isControlled = true;
                 Input.ResetInputAxes();

@@ -37,6 +37,8 @@ public class Dog : MonoBehaviour
     private float force = 300.0f;
     private float forced = 400.0f;
 
+    
+
     private void Awake()
     {
         dPos = transform;
@@ -60,11 +62,18 @@ public class Dog : MonoBehaviour
         stopFollow = false;
 
         target = Player.transform;
+        movSpeed = 3.0f;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+        GetComponent<Rigidbody>().freezeRotation = true;
+
         if (!stopFollow)
             target = Player.transform;
 
@@ -134,13 +143,28 @@ public class Dog : MonoBehaviour
         if (other.gameObject.tag == "TriggerH3")
             isRoom3 = true;
 
+        if (other.gameObject.tag == "Mueble2")
+        {
+           // GetComponent<Rigidbody>().freezeRotation = true;
+        }
+
+        if (other.gameObject.tag == "Mueble1")
+        {
+           
+
+        }
+
+        if(other.gameObject.tag == "MuebleConLlave")
+        {
+           // GetComponent<Rigidbody>().freezeRotation = true;
+        }
+
 
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-
             follow = true;
         }
 
@@ -163,22 +187,28 @@ public class Dog : MonoBehaviour
     {
         if (search)
         {
-            stopFollow = true;
-
+            stopFollow = true;            
             searchTimer += Time.fixedDeltaTime;
 
             if (isRoom5)
             {
 
                 if (searchTimer >= 0.0f)
+                {
                     target = mueble1.transform;
-
+                   // movSpeed = 3.0f;
+                }
                 if (searchTimer >= 6.0f)
+                {
                     target = mueble2.transform;
+                    //movSpeed = 3.0f;
+                }
 
                 if (searchTimer >= 11.0f)
+                {
                     target = muebleLlave.transform;
-
+                   // movSpeed = 3.0f;
+                }
                 if (searchTimer >= 16.0f)
                 {
                     GameManager.Instance.haveKeyFromRoom5 = true;

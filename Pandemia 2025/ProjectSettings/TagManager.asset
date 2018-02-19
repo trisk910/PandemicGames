@@ -47,6 +47,7 @@ TagManager:
   - InputPassword
   - CurrentPassword
   - showKeyboard
+  - TriggerKeyboard
   layers:
   - Default
   - TransparentFX
