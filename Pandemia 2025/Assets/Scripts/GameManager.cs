@@ -36,6 +36,14 @@ public class GameManager : MonoBehaviour {
 
     private Dog DogFunctions;
 
+
+
+    private GameObject Keyboard;
+    private string password = "";
+    public float randomPassword;
+    private GameObject currentPassword;
+    private float min = 0, max = 9;
+
     void Awake()
     {
         if (Instance == null)
@@ -48,6 +56,12 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        Keyboard = (GameObject)GameObject.FindGameObjectWithTag("showKeyboard");
+        currentPassword = (GameObject)GameObject.FindGameObjectWithTag("CurrentPassword");
+        makePassword();
+
+       //------>>>>>> currentPassword.gameObject.GetComponent<Text>().text() = randomPassword;
 
         BatteriaInRoom5 = (GameObject)GameObject.FindGameObjectWithTag("BatteriaH5");
 
@@ -68,6 +82,8 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        
+
         if (showBatteriaInRoom5)
             BatteriaInRoom5.SetActive(true);
 
@@ -77,7 +93,17 @@ public class GameManager : MonoBehaviour {
             IntroducePassT.SetActive(true);
     }
 
-    void IntroducePassword()
+    public void OpenKeyboard()
+    {
+
+    }
+
+    public void CloseKeyboard()
+    {
+        
+    }
+
+        void IntroducePassword()
     {
         if(showBatteriaInRoom5 && haveTheBaterieFromRoom1)
         {
@@ -87,13 +113,19 @@ public class GameManager : MonoBehaviour {
         if (havePassword && showHavePass)
         {
             askPass.SetActive(false);
-            showPassF.SetActive(true);
-            canGoElevator = true;
 
-            Lights.gameObject.SetActive(true);
+            OpenKeyboard();
+
+            if(password == randomPassword+ToString())
+            {
+                showPassF.SetActive(true);
+                canGoElevator = true;
+
+                Lights.gameObject.SetActive(true); }
+
+            }
+
         }
-
-    }
 
    public void LoadLevels()
     {
@@ -101,5 +133,12 @@ public class GameManager : MonoBehaviour {
         if (canGoElevator)
             Application.LoadLevel(0);
 
+    }
+
+    private void makePassword()
+    {     
+        randomPassword = Random.Range(1000, 9999);           
+        Mathf.RoundToInt(randomPassword);
+        Debug.Log("rpass= " + randomPassword);
     }
 }

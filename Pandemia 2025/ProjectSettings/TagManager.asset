@@ -34,6 +34,19 @@ TagManager:
   - Mueble3H3
   - Lights
   - Dog
+  - Send0
+  - Send1
+  - Send2
+  - Send3
+  - Send4
+  - Send5
+  - Send6
+  - Send7
+  - Send8
+  - Send9
+  - InputPassword
+  - CurrentPassword
+  - showKeyboard
   layers:
   - Default
   - TransparentFX
