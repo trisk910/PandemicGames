@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 
     public bool switchCharacter = false;
 
+    private GameObject[] LightTextures;
+
     public bool haveKeyFromRoom5 = false;
     public bool haveTheBaterieFromRoom1 = false;
     public bool havePassword = false;
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour {
 
     private GameObject BatteriaInRoom5;
     public bool showBatteriaInRoom5 =false;
+    
 
     public GameObject askPass;
     public GameObject showPassF;
@@ -27,7 +30,7 @@ public class GameManager : MonoBehaviour {
     public GameObject light;
 
     public bool respawnKey = true;
-
+    
 
     private bool canGoElevator = false;
 
@@ -46,6 +49,10 @@ public class GameManager : MonoBehaviour {
    
     private float min = 0, max = 9;
 
+    //GUI
+    private GameObject showGuiBateria;
+    private GameObject showGuiKey;
+
     void Awake()
     {
         if (Instance == null)
@@ -60,7 +67,21 @@ public class GameManager : MonoBehaviour {
     void Start () {
 
         Keyboard = (GameObject)GameObject.FindGameObjectWithTag("showKeyboard");
-        
+
+        showGuiBateria = (GameObject)GameObject.FindGameObjectWithTag("ShowGuiBateria");
+        showGuiKey = (GameObject)GameObject.FindGameObjectWithTag("ShowGuiKey");
+
+
+        LightTextures = GameObject.FindGameObjectsWithTag("lightsOn");
+
+        foreach (GameObject LightTexture in LightTextures)
+        {
+            LightTexture.SetActive(false);
+        }
+
+            showGuiBateria.SetActive(false);
+        showGuiKey.SetActive(false);
+
         makePassword();
 
         Keyboard.SetActive(false);
@@ -86,10 +107,23 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        
+        //GUI bool
+
+        if (haveTheBaterieFromRoom1)
+            showGuiBateria.SetActive(true);
 
         if (showBatteriaInRoom5)
             BatteriaInRoom5.SetActive(true);
+
+        if (haveKeyFromRoom5)
+        {
+            showGuiKey.SetActive(true);
+        }
+        else
+        {
+            showGuiKey.SetActive(false);
+        }
+
 
         IntroducePassword();
 
@@ -110,6 +144,7 @@ public class GameManager : MonoBehaviour {
     {
         if(showBatteriaInRoom5 && haveTheBaterieFromRoom1)
         {
+            showGuiBateria.SetActive(false);
             askPass.SetActive(true);
             canGoGetCode = true;
         }
@@ -120,7 +155,12 @@ public class GameManager : MonoBehaviour {
                 
                 canGoElevator = true;
                 showKeyboard = false;
-                Lights.gameObject.SetActive(true); }
+                Lights.gameObject.SetActive(true);
+                foreach (GameObject LightTexture in LightTextures)
+                {
+                    LightTexture.SetActive(true);
+                }
+            }
 
             }
 

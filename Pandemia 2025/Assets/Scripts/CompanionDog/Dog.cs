@@ -72,7 +72,7 @@ public class Dog : MonoBehaviour
     {
 
 
-        GetComponent<Rigidbody>().freezeRotation = true;
+       // GetComponent<Rigidbody>().freezeRotation = true;
 
         if (!stopFollow)
             target = Player.transform;
@@ -103,19 +103,21 @@ public class Dog : MonoBehaviour
     {
         if (GameManager.Instance.switchCharacter)
         {
-            
+
             if (Input.GetKey(KeyCode.W))
             {
                 transform.Translate(Vector3.forward * pSpeed * Time.deltaTime);
-                //gameObject.GetComponent<Animation>().Play("run");
+               // gameObject.GetComponent<Animation>().Play("run");
             }
             if (Input.GetKey(KeyCode.S))
             {
                 transform.Translate(Vector3.back * pSpeed * Time.deltaTime);
-              //  gameObject.GetComponent<Animation>().Play("run");
+                //gameObject.GetComponent<Animation>().Play("run");
             }
             else if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+            {
                // gameObject.GetComponent<Animation>().Play("idle");
+            }
 
             if (Input.GetKey(KeyCode.D))
             {
@@ -138,7 +140,10 @@ public class Dog : MonoBehaviour
         }
 
         if (other.gameObject.tag == "TriggerH5")
+        {
             isRoom5 = true;
+            GetComponent<Rigidbody>().freezeRotation = true;
+        }
 
         if (other.gameObject.tag == "TriggerH3")
             isRoom3 = true;
@@ -169,7 +174,10 @@ public class Dog : MonoBehaviour
         }
 
         if (other.gameObject.tag == "TriggerH5")
+        {
             isRoom5 = false;
+            GetComponent<Rigidbody>().freezeRotation = false;
+        }
 
         if (other.gameObject.tag == "TriggerH3")
             isRoom3 = false;
@@ -179,7 +187,7 @@ public class Dog : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            gameObject.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * -forced);
+           // gameObject.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * -forced);
         }
     }
 
@@ -211,7 +219,7 @@ public class Dog : MonoBehaviour
                 }
                 if (searchTimer >= 16.0f)
                 {
-                    GameManager.Instance.haveKeyFromRoom5 = true;
+                    
                     if (GameManager.Instance.respawnKey)
                     {
                         cKey = Instantiate(key);
@@ -222,6 +230,7 @@ public class Dog : MonoBehaviour
                         Destroy(cKey, 1.2f);
                     }
                     GameManager.Instance.respawnKey = false;
+                    GameManager.Instance.haveKeyFromRoom5 = true;
                     Start();
                 }
             }

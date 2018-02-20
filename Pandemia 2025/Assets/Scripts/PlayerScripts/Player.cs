@@ -123,6 +123,7 @@ public class Player : MonoBehaviour
                 Ph7.gameObject.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, -90.0f, transform.position.y));
                 GameManager.Instance.canOpenDoorH1 = true;
                 Destroy(th7.gameObject);
+                GameManager.Instance.haveKeyFromRoom5 = false;
             }
         }
         if (collision.gameObject.tag == "Ph6")

@@ -50,6 +50,11 @@ TagManager:
   - TriggerKeyboard
   - ShowGuiKey
   - ShowGuiBateria
+  - lightsOn
+  - GuiJohnSelected
+  - GuiJohnNotSelected
+  - GuiDogSelected
+  - GuiDogNotSelected
   layers:
   - Default
   - TransparentFX
