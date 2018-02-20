@@ -34,7 +34,7 @@ public class Dog : MonoBehaviour
 
     public GameObject key;
     private GameObject cKey;
-    private float force = 300.0f;
+    private float force = 500.0f;
     private float forced = 400.0f;
 
     
@@ -215,9 +215,11 @@ public class Dog : MonoBehaviour
                     if (GameManager.Instance.respawnKey)
                     {
                         cKey = Instantiate(key);
-                        cKey.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * force);
+                        cKey.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * force);
+                        cKey.gameObject.transform.rotation = Quaternion.Euler(new Vector3(2 * Time.deltaTime, 0, 0));
+                        //cKey.gameObject.transform.position = (new Vector3(0.0f, 1.0f * Time.deltaTime, 0.0f));
                         Physics.IgnoreCollision(cKey.GetComponent<Collider>(), this.GetComponent<Collider>());
-                        Destroy(cKey, 1.8f);
+                        Destroy(cKey, 1.2f);
                     }
                     GameManager.Instance.respawnKey = false;
                     Start();

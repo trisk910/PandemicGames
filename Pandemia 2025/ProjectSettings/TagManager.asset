@@ -48,6 +48,8 @@ TagManager:
   - CurrentPassword
   - showKeyboard
   - TriggerKeyboard
+  - ShowGuiKey
+  - ShowGuiBateria
   layers:
   - Default
   - TransparentFX
