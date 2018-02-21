@@ -83,6 +83,7 @@ namespace CompleteProject
 
             if (Input.GetKeyDown(KeyCode.T))
             {
+               
                 Dog.isControlled = true;
                 johnselected = false;
                 dogselected = true;

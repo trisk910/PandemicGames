@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour {
 
     private Dog DogFunctions;
 
+    public GameObject generadorSound;
 
 
     private GameObject Keyboard;
@@ -65,6 +66,8 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        generadorSound.SetActive(false);
 
         Keyboard = (GameObject)GameObject.FindGameObjectWithTag("showKeyboard");
 
@@ -152,7 +155,7 @@ public class GameManager : MonoBehaviour {
         {                      
             if (string.Equals(InputText.currentPassword, randomPassword.ToString()))
             {
-                
+                generadorSound.SetActive(true);
                 canGoElevator = true;
                 showKeyboard = false;
                 Lights.gameObject.SetActive(true);

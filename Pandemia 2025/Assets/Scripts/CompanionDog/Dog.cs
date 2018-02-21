@@ -70,7 +70,7 @@ public class Dog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
 
        // GetComponent<Rigidbody>().freezeRotation = true;
 
@@ -102,10 +102,10 @@ public class Dog : MonoBehaviour
     private void MoveDog()
     {
         if (GameManager.Instance.switchCharacter)
-        {
-
+        {            
             if (Input.GetKey(KeyCode.W))
             {
+               
                 transform.Translate(Vector3.forward * pSpeed * Time.deltaTime);
                // gameObject.GetComponent<Animation>().Play("run");
             }
