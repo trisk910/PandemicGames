@@ -47,12 +47,16 @@ public class GameManager : MonoBehaviour {
     public string password = "";
    
     public float randomPassword;
-   
-    private float min = 0, max = 9;
+
+    private GameObject player;
+    private GameObject Dog;
 
     //GUI
     private GameObject showGuiBateria;
     private GameObject showGuiKey;
+
+    //Level2
+    public GameObject spawnpoint;
 
     void Awake()
     {
@@ -68,6 +72,10 @@ public class GameManager : MonoBehaviour {
     void Start () {
 
         generadorSound.SetActive(false);
+
+
+        player = (GameObject)GameObject.FindGameObjectWithTag("Player");
+        Dog = (GameObject)GameObject.FindGameObjectWithTag("Dog");
 
         Keyboard = (GameObject)GameObject.FindGameObjectWithTag("showKeyboard");
 
@@ -105,6 +113,11 @@ public class GameManager : MonoBehaviour {
         Lights.gameObject.SetActive(false);
 
         DogFunctions = FindObjectOfType<Dog>();
+
+
+
+        //level2
+
     }
 	
 	// Update is called once per frame
@@ -173,7 +186,11 @@ public class GameManager : MonoBehaviour {
     {
 
         if (canGoElevator)
-            Application.LoadLevel(0);
+        {
+            //Application.LoadLevel(0);
+            player.transform.position = (new Vector3(spawnpoint.transform.position.x, spawnpoint.transform.position.y, spawnpoint.transform.position.z));
+            Dog.transform.position = (new Vector3(spawnpoint.transform.position.x, spawnpoint.transform.position.y, spawnpoint.transform.position.z + 1.5f));
+        }
 
     }
 
